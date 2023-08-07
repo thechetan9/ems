@@ -60,7 +60,7 @@ export const listEvents = (req: Request, res: Response) => {
   let filteredEvents = [...events];
 
   // Apply filters if provided
-  if (eventName) {
+  if (typeof eventName === "string") {
     filteredEvents = filteredEvents.filter(
       (event) =>
         typeof event.eventName === "string" &&
@@ -68,7 +68,7 @@ export const listEvents = (req: Request, res: Response) => {
     );
   }
 
-  if (organizer) {
+  if (typeof organizer === "string") {
     filteredEvents = filteredEvents.filter(
       (event) =>
         typeof event.organizer === "string" &&
