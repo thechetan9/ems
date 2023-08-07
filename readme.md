@@ -25,7 +25,7 @@ Welcome to the Event Management Platform (EMP) repository! This platform allows 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/ems.git
+   git clone https://github.com/thechetan9/ems.git
 
 2. Navigate to the project directory:
 
